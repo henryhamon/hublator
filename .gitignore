@@ -1,0 +1,9 @@
+public/assets/*
+log/*
+tmp/*
+nbproject/*
+config/configuration.yml
+config/database.yml
+db/*.sql
+doc/*
+*~
