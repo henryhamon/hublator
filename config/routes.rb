@@ -11,6 +11,13 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
+  map.resources :guilds
+  map.resources :histories
+  map.resources :ranking
+  map.resources :spells
+  map.resources :warriors
+
+  map.resource :home
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
@@ -29,9 +36,14 @@ ActionController::Routing::Routes.draw do |map|
   #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
   #     admin.resources :products
   #   end
+  map.namespace :backstage do |backstage|
+    admin.resources :levels
+    admin.resources :spells
+    admin.resources :histories
+  end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => 'home'
 
   # See how all your routes lay out with "rake routes"
 

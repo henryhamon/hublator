@@ -1,0 +1,35 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to Levels (20090128120901)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (11.2ms)[0m   [0mCREATE TABLE "levels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "level" integer, "need_xp" integer, "hp_received" integer) [0m
+  [4;36;1mSQL (14.1ms)[0m   [0;1mCREATE UNIQUE INDEX "index_levels_on_level" ON "levels" ("level")[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090128120901')[0m
+Migrating to Spells (20090128121422)
+  [4;36;1mSQL (9.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE TABLE "spells" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(40), "spell_type" integer, "damage" integer, "level_id" integer, "max_level" integer, "min_level" integer) [0m
+  [4;36;1mSQL (11.7ms)[0m   [0;1mCREATE UNIQUE INDEX "index_spells_on_name" ON "spells" ("name")[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090128121422')[0m
+Migrating to TwitterUsers (20090128121957)
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE TABLE "twitter_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "twitter_id" integer, "hp" integer DEFAULT 10000, "xp" integer DEFAULT 0, "level_id" integer, "guild" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: main.users: CREATE UNIQUE INDEX "index_users_on_twitter_id" ON "users" ("twitter_id")[0m

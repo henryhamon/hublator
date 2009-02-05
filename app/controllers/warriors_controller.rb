@@ -1,0 +1,2 @@
+class WarriorsController < ApplicationController
+end
