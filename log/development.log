@@ -1292,3 +1292,31 @@ Rendering template within layouts/pbt
 Rendering histories/index
 Rendered home/_analytics (0.2ms)
 Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/histories]
+
+
+Processing HistoriesController#index (for 127.0.0.1 at 2009-02-06 08:22:37) [GET]
+Rendering template within layouts/pbt
+Rendering histories/index
+Rendered home/_analytics (0.3ms)
+Completed in 126ms (View: 120, DB: 0) | 200 OK [http://localhost/histories]
+
+
+Processing SpellsController#index (for 127.0.0.1 at 2009-02-06 08:23:11) [GET]
+Rendering template within layouts/pbt
+Rendering spells/index
+Rendered home/_analytics (0.4ms)
+Completed in 49ms (View: 42, DB: 0) | 200 OK [http://localhost/spells]
+
+
+Processing GuildsController#index (for 127.0.0.1 at 2009-02-06 08:23:12) [GET]
+Rendering template within layouts/pbt
+Rendering guilds/index
+Rendered home/_analytics (0.3ms)
+Completed in 52ms (View: 46, DB: 0) | 200 OK [http://localhost/guilds]
+
+
+Processing WarriorsController#index (for 127.0.0.1 at 2009-02-06 08:23:13) [GET]
+Rendering template within layouts/pbt
+Rendering warriors/index
+Rendered home/_analytics (0.3ms)
+Completed in 40ms (View: 36, DB: 0) | 200 OK [http://localhost/warriors]
