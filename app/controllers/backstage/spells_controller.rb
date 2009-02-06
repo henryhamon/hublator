@@ -1,2 +1,2 @@
-class Backstage::SpellsController < ApplicationController
+class Backstage::SpellsController < BackstageApplicationController
 end

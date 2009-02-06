@@ -18,14 +18,13 @@ Event.observe(window, 'load', function() {
     <div id="up-side">
       <h1>Play By Tweet</h1>
       <ul>
-        <li class="rounded"><%= link_to 'home', '' %></li>
-        <li class="rounded"><%= link_to 'ranking', '' %></li>
-        <li class="rounded"><%= link_to 'guilds', '' %></li>
-        <li class="rounded"><%= link_to 'spells', '' %></li>
-        <li class="rounded"><%= link_to 'levels', '' %></li>
-        <li class="rounded"><%= link_to 'warriors', '' %></li>
-        <li class="rounded"><%= link_to 'how to play', '' %></li>
-        <li class="rounded"><%= link_to 'guides', '' %></li>
+        <li class="rounded"><%= link_to 'home', root_path %></li>
+        <li class="rounded"><%= link_to 'ranking', ranking_path %></li>
+        <li class="rounded"><%= link_to 'guilds', guilds_path %></li>
+        <li class="rounded"><%= link_to 'spells', spells_path %></li>
+        <li class="rounded"><%= link_to 'warriors', warriors_path %></li>
+        <li class="rounded"><%= link_to 'how to play', histories_path %></li>
+        <li class="rounded"><%= link_to 'guides', histories_path %></li>
       </ul>
     </div>
 

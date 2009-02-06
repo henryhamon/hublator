@@ -1,2 +1,2 @@
-class Backstage::HistoriesController < ApplicationController
+class Backstage::HistoriesController < BackstageApplicationController
 end

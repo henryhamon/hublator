@@ -11,13 +11,14 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products
+  map.resource :home
+  map.resource :ranking
+
   map.resources :guilds
   map.resources :histories
-  map.resources :ranking
   map.resources :spells
   map.resources :warriors
 
-  map.resource :home
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }

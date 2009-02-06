@@ -1,2 +1,2 @@
-class Backstage::LevelsController < ApplicationController
+class Backstage::LevelsController < BackstageApplicationController
 end
