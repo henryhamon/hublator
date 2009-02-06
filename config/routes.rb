@@ -37,9 +37,9 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
   map.namespace :backstage do |backstage|
-    admin.resources :levels
-    admin.resources :spells
-    admin.resources :histories
+    backstage.resources :levels
+    backstage.resources :spells
+    backstage.resources :histories
   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
