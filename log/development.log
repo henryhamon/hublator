@@ -1320,3 +1320,52 @@ Rendering template within layouts/pbt
 Rendering warriors/index
 Rendered home/_analytics (0.3ms)
 Completed in 40ms (View: 36, DB: 0) | 200 OK [http://localhost/warriors]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:34:30) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.4ms)
+Completed in 61ms (View: 56, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:35:19) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.3ms)
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:36:57) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.2ms)
+Completed in 117ms (View: 111, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:36:58) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.3ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:36:58) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.2ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:37:23) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.3ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-02-07 11:37:50) [GET]
+Rendering template within layouts/pbt
+Rendering home/index
+Rendered home/_analytics (0.2ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/]

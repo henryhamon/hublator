@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Play By Tweet</title>
-<%= stylesheet_link_tag 'frontstage.css', :cache => true %>
-<%= javascript_include_tag :defaults, :cache => true %>
-<%= javascript_include_tag 'corners.js', :cache => true %>
+<%= stylesheet_link_tag 'frontstage.css', :cache => 'main' %>
+<%= javascript_include_tag :defaults, :cache => 'main' %>
+<%= javascript_include_tag ['jquery.corners.js', 'newExcanvas.js'], :cache => true %>
 <script language="javascript">
-Event.observe(window, 'load', function() {
-  $$('.rounded').each(function(item) { new Effect.Corner(item, "7px"); });
+$(document).ready(function(){
+  $(".rounded").corners();
 });
 </script>
 <%= yield :head %>
