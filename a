@@ -1,0 +1,52 @@
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#
+#	modified:   app/controllers/application.rb
+#	modified:   config/routes.rb
+#	modified:   db/development.sqlite3
+#	modified:   db/migrate/20090128121957_twitter_users.rb
+#	modified:   db/migrate/20090206181546_bot_actions.rb
+#	deleted:    lib/daemons/pbtbot.rb
+#	deleted:    lib/daemons/pbtbot_ctl
+#	deleted:    lib/daemons/pbtstream.rb
+#	deleted:    lib/daemons/pbtstream_ctl
+#	modified:   log/development.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	app/controllers/backstage/sessions_controller.rb
+#	app/controllers/backstage/users_controller.rb
+#	app/helpers/backstage/sessions_helper.rb
+#	app/helpers/backstage/users_helper.rb
+#	app/models/tweet_buffer.rb
+#	app/models/tweet_buffer_log.rb
+#	app/models/user.rb
+#	app/views/backstage/
+#	config/initializers/site_keys.rb
+#	db/migrate/20090207233800_users.rb
+#	db/migrate/20090210235105_tweet_buffers.rb
+#	db/migrate/20090210235114_tweet_buffer_logs.rb
+#	db/schema.rb
+#	generate
+#	lib/authenticated_system.rb
+#	lib/authenticated_test_helper.rb
+#	lib/daemons/pbt_bot.rb
+#	lib/daemons/pbt_bot_ctl
+#	lib/daemons/pbt_populate_game.rb
+#	lib/daemons/pbt_populate_game_ctl
+#	lib/daemons/pbt_stream.rb
+#	lib/daemons/pbt_stream/
+#	lib/daemons/pbt_stream_ctl
+#	test/fixtures/backstage/
+#	test/fixtures/tweet_buffer_logs.yml
+#	test/fixtures/tweet_buffers.yml
+#	test/functional/backstage/sessions_controller_test.rb
+#	test/functional/backstage/users_controller_test.rb
+#	test/unit/backstage/
+#	test/unit/tweet_buffer_log_test.rb
+#	test/unit/tweet_buffer_test.rb
+#	vendor/plugins/paperclip/
+#	vendor/plugins/restful-authentication/
+no changes added to commit (use "git add" and/or "git commit -a")

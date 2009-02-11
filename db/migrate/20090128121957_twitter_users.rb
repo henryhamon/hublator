@@ -9,7 +9,7 @@ class TwitterUsers < ActiveRecord::Migration
       t.string :guild
       t.timestamps
     end
-    add_index :users, :twitter_id, :unique => true
+    add_index :twitter_users, :twitter_id, :unique => true
   end
 
   def self.down

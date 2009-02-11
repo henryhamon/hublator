@@ -1,0 +1,2 @@
+module Backstage::SessionsHelper
+end
