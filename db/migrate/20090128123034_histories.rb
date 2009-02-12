@@ -2,9 +2,8 @@ class Histories < ActiveRecord::Migration
 
   def self.up
     create_table "histories", :force => true do |t|
-      t.integer :user_receved
-      t.integer :user_attack
-      t.references :spell
+      t.integer :title
+      t.integer :content
       t.timestamps
     end
   end

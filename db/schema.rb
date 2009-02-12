@@ -62,12 +62,14 @@ ActiveRecord::Schema.define(:version => 20090210235114) do
     t.integer  "page"
     t.string   "completed_in"
     t.string   "query"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "tweet_buffers", :force => true do |t|
     t.integer  "tweet_buffer_log_id"
+    t.boolean  "processed",                         :default => false
     t.string   "profile_image_url"
     t.datetime "tweet_created_at"
     t.string   "from_user",           :limit => 50

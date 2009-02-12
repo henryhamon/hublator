@@ -1,0 +1,18 @@
+<h1>Listing histories</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for history in @histories %>
+  <tr>
+    <td><%= history.title %></td>
+    <td><%= link_to 'Edit', edit_backstage_history_path(history) %></td>
+    <td><%= link_to 'Destroy', backstage_history_path(history), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New history', new_backstage_history_path %>
