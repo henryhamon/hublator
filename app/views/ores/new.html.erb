@@ -1,0 +1,6 @@
+<h1>Ores#new</h1>
+<p>Find me in app/views/ores/new.html.erb</p>
+<% form_for(@ore) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+  <%= f.submit "Create", :id => 'create' %>
+<% end %>

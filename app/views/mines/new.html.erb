@@ -1,0 +1,4 @@
+<% form_for(@mine) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+  <%= f.submit "Create", :id => 'create' %>
+<% end %>

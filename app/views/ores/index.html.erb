@@ -1,0 +1,22 @@
+<h1>Ores#index</h1>
+<%= flash[:notice] %> 
+<p>Find me in app/views/ores/index.html.erb</p>
+<p><%= link_to "New Ore", new_ore_path %></p>
+<table >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @ores.each do |ore| %>
+      <tr>
+        <td><%= h(ore.name) %></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<p><%= link_to "New Ore", new_ore_path %></p>
+  

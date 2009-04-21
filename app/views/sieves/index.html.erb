@@ -1,0 +1,22 @@
+<h1>Sieves#index</h1>
+<%= flash[:notice] %> 
+<p>Find me in app/views/sieves/index.html.erb</p>
+<p><%= link_to "New Sieve", new_siefe_path %></p>
+<table >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sieves.each do |sieve| %>
+      <tr>
+        <td><%= h(sieve.name) %></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<p><%= link_to "New Sieve", new_siefe_path %></p>
+  

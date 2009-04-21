@@ -1,0 +1,23 @@
+<h1>Mines#index</h1>
+<%= flash[:notice] %> 
+<p><%= link_to "New Mine", new_mine_path %></p>
+<table >
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @mines.each do |mine| %>
+      <tr>
+        <td><%= h(mine.name) %></td>
+        <td><%= h(mine.description) %></td>
+        <td></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<p><%= link_to "New Mine", new_mine_path %></p>
+  
