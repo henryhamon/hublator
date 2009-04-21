@@ -1,2 +1,0 @@
-module Backstage::SpellsHelper
-end
