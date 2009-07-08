@@ -7,3 +7,4 @@ config/database.yml
 db/*.sql
 doc/*
 *~
+db/schema.rb
