@@ -8,3 +8,5 @@ db/*.sql
 doc/*
 *~
 db/schema.rb
+*.swp
+*.swo
