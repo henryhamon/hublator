@@ -1460,3 +1460,345 @@ Completed in 127ms (View: 60, DB: 24) | 200 OK [http://localhost/posts/new]
     /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
     /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
     script/server:3
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:25:42) [GET]
+  [4;36;1mPost Columns (10.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (27.6ms)
+Completed in 90ms (View: 34, DB: 11) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:26:36) [GET]
+  [4;36;1mPost Columns (8.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (22.2ms)
+Completed in 112ms (View: 61, DB: 9) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:26:53) [GET]
+  [4;36;1mPost Columns (16.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (27.5ms)
+Completed in 87ms (View: 34, DB: 17) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:27:11) [GET]
+  [4;36;1mPost Columns (14.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (24.4ms)
+Completed in 91ms (View: 50, DB: 15) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:27:23) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (45.0ms)
+Completed in 92ms (View: 52, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:27:46) [GET]
+  [4;36;1mPost Columns (7.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (20.8ms)
+Completed in 113ms (View: 49, DB: 7) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:28:34) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (42.9ms)
+Completed in 98ms (View: 55, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:29:10) [GET]
+  [4;36;1mPost Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (31.2ms)
+Completed in 109ms (View: 57, DB: 12) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:29:28) [GET]
+  [4;36;1mPost Columns (13.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (19.8ms)
+Completed in 99ms (View: 43, DB: 13) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:29:38) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (596.4ms)
+Completed in 680ms (View: 629, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:29:55) [GET]
+  [4;36;1mPost Columns (14.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (39.0ms)
+Completed in 111ms (View: 47, DB: 15) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:30:12) [GET]
+  [4;36;1mPost Columns (7.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (9.3ms)
+Completed in 106ms (View: 45, DB: 8) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:31:06) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (38.6ms)
+Completed in 175ms (View: 133, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:31:25) [GET]
+  [4;36;1mPost Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (41.7ms)
+Completed in 126ms (View: 88, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:31:43) [GET]
+  [4;36;1mPost Columns (23.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (30.0ms)
+Completed in 115ms (View: 78, DB: 24) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:32:04) [GET]
+  [4;36;1mPost Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (26.5ms)
+Completed in 184ms (View: 124, DB: 7) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:32:56) [GET]
+  [4;36;1mPost Columns (16.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (33.8ms)
+Completed in 87ms (View: 42, DB: 17) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:33:05) [GET]
+  [4;36;1mPost Columns (25.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (9.4ms)
+Completed in 92ms (View: 51, DB: 26) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:33:26) [GET]
+  [4;36;1mPost Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (46.8ms)
+Completed in 88ms (View: 55, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:33:42) [GET]
+  [4;36;1mPost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (8.6ms)
+Completed in 89ms (View: 45, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:33:58) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (29.6ms)
+Completed in 112ms (View: 55, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:34:26) [GET]
+  [4;36;1mPost Columns (16.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (10.6ms)
+Completed in 56ms (View: 17, DB: 16) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:34:56) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (28.2ms)
+Completed in 98ms (View: 54, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:35:32) [GET]
+  [4;36;1mPost Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (32.4ms)
+Completed in 79ms (View: 49, DB: 6) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:36:17) [GET]
+  [4;36;1mPost Columns (12.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (35.3ms)
+Completed in 80ms (View: 42, DB: 13) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:36:26) [GET]
+  [4;36;1mPost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (34.7ms)
+Completed in 100ms (View: 55, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:45:09) [GET]
+  [4;36;1mPost Columns (7.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (30.1ms)
+Completed in 68ms (View: 37, DB: 8) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:45:34) [GET]
+  [4;36;1mPost Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (20.8ms)
+Completed in 67ms (View: 28, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:45:45) [GET]
+  [4;36;1mPost Columns (7.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (32.8ms)
+Completed in 103ms (View: 60, DB: 8) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:46:47) [GET]
+  [4;36;1mPost Columns (10.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (19.1ms)
+Completed in 107ms (View: 56, DB: 11) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:47:20) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (30.1ms)
+Completed in 95ms (View: 50, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:47:43) [GET]
+  [4;36;1mPost Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (29.0ms)
+Completed in 93ms (View: 56, DB: 4) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:48:04) [GET]
+  [4;36;1mPost Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (10.3ms)
+Completed in 107ms (View: 42, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:48:23) [GET]
+  [4;36;1mPost Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (559.6ms)
+Completed in 612ms (View: 581, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:48:36) [GET]
+  [4;36;1mPost Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (39.1ms)
+Completed in 112ms (View: 62, DB: 3) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:49:00) [GET]
+  [4;36;1mPost Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (38.2ms)
+Completed in 107ms (View: 62, DB: 4) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:49:19) [GET]
+  [4;36;1mPost Columns (20.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (28.0ms)
+Completed in 76ms (View: 38, DB: 20) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-09 00:49:39) [GET]
+  [4;36;1mPost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (29.6ms)
+Completed in 66ms (View: 36, DB: 3) | 200 OK [http://localhost/posts/new]

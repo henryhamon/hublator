@@ -34,16 +34,24 @@ ul.tabs#main-nav {
   bottom: 0px;
   margin-bottom: auto;
   border-bottom: none; }
-  /* line 37, ../../../app/stylesheets/application.sass */
-  ul.tabs#main-nav li a {
-    background: #f0f8ff;
-    color: #444;
-    padding: 2px 10px; }
+  /* line 36, ../../../app/stylesheets/application.sass */
+  ul.tabs#main-nav li {
+    border: none; }
+    /* line 38, ../../../app/stylesheets/application.sass */
+    ul.tabs#main-nav li a {
+      background: #4689ce;
+      color: #fff;
+      padding: 2px 10px; }
+      /* line 43, ../../../app/stylesheets/application.sass */
+      ul.tabs#main-nav li a.selected {
+        background: #f0f8ff;
+        color: #444; }
 
-/* line 45, ../../../app/stylesheets/application.sass */
+/* line 50, ../../../app/stylesheets/application.sass */
 div.middle-container {
-  margin: 10px auto; }
+  margin: auto auto 10px auto;
+  background: #f0f8ff; }
 
-/* line 48, ../../../app/stylesheets/application.sass */
+/* line 54, ../../../app/stylesheets/application.sass */
 div#main {
   background: #fff; }
