@@ -7,7 +7,6 @@
 ActionController::Base.session = {
   :key         => '_studjaro_session',
   :secret      => '0632177aad5120dab644700f72215b17ae0f32169563ce84bb15e2255ee5bed3c76e61c4700960f051e012707218becf7ef36e509ae748a4e8d6efbd68553596'
-  :secret      => 'bcb82495f50a335629136accb4b52bc198a53c0ed1c96aeef263edb2259a93cebead27bd0e53fcb092d86deb19170dd5f17af968a6176c2f0069dbb163ee2be1'
 }
 
 # Use the database for sessions instead of the cookie-based default,
