@@ -48,10 +48,23 @@
             %li
               %a Another Item
 
-    // @middle => notice, breadcrumbs, subnavs
+    // @middle => subnavs
     .middle-container
       .container
         .span-24{:id => 'middle'}
+
+          %ul.tabs.subnav
+            %li
+              %a{:class => 'selected'} Something
+            %li
+              %a Something Else
+            %li
+              %a Another Item
+
+    .main-container
+      .container.border
+        .span-24{:id => 'main'}
+
           .breadCrumbHolder.module
             #breadcrumb.breadCrumb.module
               %ul
@@ -63,9 +76,6 @@
                   %a{:href => '#'} item long long item just to see the behavior
                 %li current item
 
-    .main-container
-      .container
-        .span-24{:id => 'main'}
           = yield
 
     // @foot => app description, links, etc..

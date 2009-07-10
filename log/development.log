@@ -3041,3 +3041,532 @@ Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:31:47) [GET]
 Rendering template within layouts/application
 Rendering posts/index
 Completed in 113ms (View: 78, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (17.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-10 03:51:50) [GET]
+  [4;35;1mPost Columns (215.6ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (37.4ms)
+Completed in 317ms (View: 48, DB: 233) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:52:14) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 36ms (View: 11, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (14.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:57:47) [GET]
+  [4;35;1mPost Load (21.1ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 503ms (View: 389, DB: 36) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:58:27) [GET]
+  [4;35;1mPost Load (14.7ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 36ms (View: 7, DB: 15) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:58:42) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 31ms (View: 11, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 03:59:44) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 99ms (View: 80, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:01:15) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 32ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:04:45) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 76ms (View: 57, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:06:08) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 82ms (View: 63, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:06:15) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 29ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:06:59) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:07:10) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 29ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:07:20) [GET]
+  [4;35;1mPost Load (27.5ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 77ms (View: 8, DB: 28) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:08:03) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 33ms (View: 13, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:08:08) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 55ms (View: 13, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:08:41) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 35ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:08:45) [GET]
+  [4;35;1mPost Load (8.5ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 45ms (View: 10, DB: 9) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:08:49) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 57ms (View: 17, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:09:10) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 26ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:09:15) [GET]
+  [4;35;1mPost Load (1.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 64ms (View: 7, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:09:54) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 29ms (View: 11, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:10:02) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 77ms (View: 44, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:10:12) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 53ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:10:54) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:11:15) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 37ms (View: 16, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:11:26) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 37ms (View: 16, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:11:31) [GET]
+  [4;35;1mPost Load (8.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 54ms (View: 7, DB: 9) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:13:43) [GET]
+  [4;35;1mPost Load (1.7ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #57 of app/views/layouts/application.html.haml:
+54:         .span-24{:id => 'middle'}
+55: 
+56:           ul.tabs.subnav
+57:             %li
+58:               %a{:class => 'selected'} Something
+59:             %li
+60:               %a Something Else
+
+    app/views/layouts/application.html.haml:57
+    haml (2.1.0) [v] lib/haml/precompiler.rb:311:in `push_plain'
+    haml (2.1.0) [v] lib/haml/precompiler.rb:245:in `process_line'
+    haml (2.1.0) [v] lib/haml/precompiler.rb:168:in `precompile'
+    haml (2.1.0) [v] lib/haml/engine.rb:107:in `initialize'
+    haml (2.1.0) [v] rails/./lib/haml/template/plugin.rb:21:in `new'
+    haml (2.1.0) [v] rails/./lib/haml/template/plugin.rb:21:in `compile'
+    haml (2.1.0) [v] lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.1.0) [v] lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/posts_controller.rb:9:in `index'
+    haml (2.1.0) [v] rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (209.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:13:54) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 78ms (View: 58, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:15:10) [GET]
+  [4;35;1mPost Load (6.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 63ms (View: 19, DB: 7) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:15:41) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 51ms (View: 35, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:16:10) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 31ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:16:49) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 30ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:17:12) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 38ms (View: 8, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:17:25) [GET]
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 34ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:17:30) [GET]
+  [4;35;1mPost Load (26.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 87ms (View: 32, DB: 27) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:17:58) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 34ms (View: 13, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:18:02) [GET]
+  [4;35;1mPost Load (17.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 86ms (View: 41, DB: 18) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:18:57) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 478ms (View: 431, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:19:03) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 62ms (View: 26, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:19:12) [GET]
+  [4;35;1mPost Load (8.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 58ms (View: 7, DB: 8) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:19:22) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 80ms (View: 29, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:20:02) [GET]
+  [4;35;1mPost Load (6.8ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 93ms (View: 40, DB: 7) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:20:13) [GET]
+  [4;35;1mPost Load (11.2ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 55ms (View: 8, DB: 11) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:20:50) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 60ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:21:02) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 49ms (View: 16, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:21:37) [GET]
+  [4;35;1mPost Load (14.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 56ms (View: 8, DB: 15) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (40.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:27:38) [GET]
+  [4;35;1mPost Load (63.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 344ms (View: 80, DB: 104) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:28:50) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 61ms (View: 27, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:29:10) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 34ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:30:24) [GET]
+  [4;35;1mPost Load (6.8ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 225ms (View: 69, DB: 7) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:31:10) [GET]
+  [4;35;1mPost Load (11.2ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 59ms (View: 19, DB: 11) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:31:35) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 52ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (49.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:33:09) [GET]
+  [4;35;1mPost Load (29.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 257ms (View: 89, DB: 78) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:33:57) [GET]
+  [4;35;1mPost Load (18.5ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 62ms (View: 8, DB: 19) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:34:06) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 28ms (View: 10, DB: 3) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:34:32) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:34:36) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 30ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:34:38) [GET]
+  [4;35;1mPost Load (11.9ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 70ms (View: 7, DB: 12) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:36:03) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 85ms (View: 18, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:37:43) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 57ms (View: 7, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:37:51) [GET]
+  [4;35;1mPost Load (11.3ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 64ms (View: 7, DB: 11) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (17.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-07-10 04:47:14) [GET]
+  [4;35;1mPost Load (2.2ms)[0m   [0mSELECT * FROM `posts` LIMIT 0, 20[0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 192ms (View: 51, DB: 19) | 200 OK [http://localhost/posts]

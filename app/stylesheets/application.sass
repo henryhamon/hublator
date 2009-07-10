@@ -25,6 +25,11 @@ h1
 
 h2
   color = !blue
+div.container.border
+  border = 1px solid #d5d5d5
+  margin: auto
+  marging-right: auto
+  padding-right: 0px
 
 div.inner
   display: block
@@ -82,11 +87,10 @@ ul.tabs.main-nav
       padding: 4px 15px
 
       &.selected
-        background = !light_gray
-        color = !blue
-        border-top: 2px solid #fff
-        border-left: 2px solid #ffffff
-        border-right: 2px solid #d5d5d5
+        background = !blue
+        color = !white
+        &:hover
+          color = !white
       &:hover
         color = !dark_gray
   &.left
@@ -95,10 +99,32 @@ ul.tabs.main-nav
     right: 0px
 
 
-//middle (breadcrumb, notice, subnavs)
+//middle -> subnav
 
 div.middle-container
-  margin: 10px auto
+  margin: auto auto 10px auto
+  background = !blue
+  color = !white
+  padding: 10px 0px 0px 0px
+  position: relative
+
+  ul.tabs.subnav
+    border: none
+    margin-bottom: 0px
+
+    li
+      border: none
+      color = !white
+
+      a
+        border: none
+        background = !blue
+        font-weight: normal
+        padding: 3px 15px 10px 15px
+
+        &.selected
+          border: none
+          background: url(/images/subnav_arrow.png) bottom  no-repeat
 
 div#main
   background: #fff

@@ -24,12 +24,19 @@ h1 {
 h2 {
   color: #007ac3; }
 
-/* line 29, ../../../app/stylesheets/application.sass */
+/* line 28, ../../../app/stylesheets/application.sass */
+div.container.border {
+  border: 1px solid #d5d5d5;
+  margin: auto;
+  marging-right: auto;
+  padding-right: 0px; }
+
+/* line 34, ../../../app/stylesheets/application.sass */
 div.inner {
   display: block;
   padding: 20px; }
 
-/* line 33, ../../../app/stylesheets/application.sass */
+/* line 38, ../../../app/stylesheets/application.sass */
 div.header-container {
   background: url(/images/top.png) bottom repeat-x;
   display: block;
@@ -37,141 +44,163 @@ div.header-container {
   height: 110px;
   overflow: hidden; }
 
-/* line 40, ../../../app/stylesheets/application.sass */
+/* line 45, ../../../app/stylesheets/application.sass */
 div#header {
   display: block;
   height: 110px;
   position: relative; }
-  /* line 45, ../../../app/stylesheets/application.sass */
+  /* line 50, ../../../app/stylesheets/application.sass */
   div#header div#top_track {
     margin-top: 5px;
     display: block;
     position: relative; }
-    /* line 50, ../../../app/stylesheets/application.sass */
+    /* line 55, ../../../app/stylesheets/application.sass */
     div#header div#top_track .item {
       margin-right: 5px;
       margin-left: 0px; }
-  /* line 54, ../../../app/stylesheets/application.sass */
+  /* line 59, ../../../app/stylesheets/application.sass */
   div#header .right {
     text-align: right; }
-    /* line 57, ../../../app/stylesheets/application.sass */
+    /* line 62, ../../../app/stylesheets/application.sass */
     div#header .right .item {
       margin-left: 5px;
       margin-right: 0px; }
-  /* line 62, ../../../app/stylesheets/application.sass */
+  /* line 67, ../../../app/stylesheets/application.sass */
   div#header h1 {
     color: #333333;
     position: absolute;
     top: 30px;
     font-size: 2.5em; }
 
-/* line 70, ../../../app/stylesheets/application.sass */
+/* line 75, ../../../app/stylesheets/application.sass */
 ul.tabs.main-nav {
   display: block;
   position: absolute;
   border-bottom: none;
   bottom: 0px;
   margin-bottom: 0px; }
-  /* line 76, ../../../app/stylesheets/application.sass */
+  /* line 81, ../../../app/stylesheets/application.sass */
   ul.tabs.main-nav li {
     border: none; }
-    /* line 78, ../../../app/stylesheets/application.sass */
+    /* line 83, ../../../app/stylesheets/application.sass */
     ul.tabs.main-nav li a {
       background: #909090;
       color: #fff;
       border: none;
       padding: 4px 15px; }
-      /* line 84, ../../../app/stylesheets/application.sass */
+      /* line 89, ../../../app/stylesheets/application.sass */
       ul.tabs.main-nav li a.selected {
-        background: #f3f3f3;
-        color: #007ac3;
-        border-top: 2px solid #fff;
-        border-left: 2px solid #ffffff;
-        border-right: 2px solid #d5d5d5; }
-      /* line 90, ../../../app/stylesheets/application.sass */
+        background: #007ac3;
+        color: white; }
+        /* line 92, ../../../app/stylesheets/application.sass */
+        ul.tabs.main-nav li a.selected:hover {
+          color: white; }
+      /* line 94, ../../../app/stylesheets/application.sass */
       ul.tabs.main-nav li a:hover {
         color: #333333; }
-  /* line 92, ../../../app/stylesheets/application.sass */
+  /* line 96, ../../../app/stylesheets/application.sass */
   ul.tabs.main-nav.left {
     left: 0px; }
-  /* line 94, ../../../app/stylesheets/application.sass */
+  /* line 98, ../../../app/stylesheets/application.sass */
   ul.tabs.main-nav.right {
     right: 0px; }
 
-/* line 100, ../../../app/stylesheets/application.sass */
+/* line 104, ../../../app/stylesheets/application.sass */
 div.middle-container {
-  margin: 10px auto; }
+  margin: auto auto 10px auto;
+  background: #007ac3;
+  color: white;
+  padding: 10px 0px 0px 0px;
+  position: relative; }
+  /* line 111, ../../../app/stylesheets/application.sass */
+  div.middle-container ul.tabs.subnav {
+    border: none;
+    margin-bottom: 0px; }
+    /* line 115, ../../../app/stylesheets/application.sass */
+    div.middle-container ul.tabs.subnav li {
+      border: none;
+      color: white; }
+      /* line 119, ../../../app/stylesheets/application.sass */
+      div.middle-container ul.tabs.subnav li a {
+        border: none;
+        background: #007ac3;
+        font-weight: normal;
+        padding: 3px 15px 10px 15px; }
+        /* line 125, ../../../app/stylesheets/application.sass */
+        div.middle-container ul.tabs.subnav li a.selected {
+          border: none;
+          background: url(/images/subnav_arrow.png) bottom  no-repeat; }
 
-/* line 103, ../../../app/stylesheets/application.sass */
+/* line 129, ../../../app/stylesheets/application.sass */
 div#main {
   background: #fff; }
 
-/* line 109, ../../../app/stylesheets/application.sass */
+/* line 135, ../../../app/stylesheets/application.sass */
 span.label, .mini-button, a.mini-button {
   padding: 2px 10px;
   background: url(/images/gradients.png) top repeat-x;
   color: #333333;
   font-weight: bold;
   font-size: 0.8em; }
-  /* line 116, ../../../app/stylesheets/application.sass */
+  /* line 142, ../../../app/stylesheets/application.sass */
   span.label:hover, .mini-button:hover, a.mini-button:hover {
     text-decoration: none;
     color: #007ac3; }
 
-/* line 121, ../../../app/stylesheets/application.sass */
+/* line 147, ../../../app/stylesheets/application.sass */
 .mini-button {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #666;
   border-bottom: 1px solid #666; }
 
-/* line 128, ../../../app/stylesheets/application.sass */
+/* line 154, ../../../app/stylesheets/application.sass */
 span.label.red, .mini-button.red {
   background-position: 0px -30px;
   color: #fff; }
 
-/* line 132, ../../../app/stylesheets/application.sass */
+/* line 158, ../../../app/stylesheets/application.sass */
 .mini-button.red {
   border-top: 1px solid #d00;
   border-left: 1px solid #d00;
   border-right: 1px solid #400;
   border-bottom: 1px solid #400; }
-  /* line 138, ../../../app/stylesheets/application.sass */
+  /* line 164, ../../../app/stylesheets/application.sass */
   .mini-button.red:hover {
     color: black; }
 
-/* line 141, ../../../app/stylesheets/application.sass */
+/* line 167, ../../../app/stylesheets/application.sass */
 span.label.yellow, .mini-button.yellow {
   background-position: 0px -60px; }
 
-/* line 144, ../../../app/stylesheets/application.sass */
+/* line 170, ../../../app/stylesheets/application.sass */
 .mini-button.yellow {
   border-top: 1px solid #ffdd00;
   border-left: 1px solid #ffdd00;
   border-right: 1px solid #cc8000;
   border-bottom: 1px solid #cc8000; }
 
-/* line 150, ../../../app/stylesheets/application.sass */
+/* line 176, ../../../app/stylesheets/application.sass */
 span.label.green, .mini-button.green {
   background-position: 0px -90px;
   color: #fff; }
-  /* line 154, ../../../app/stylesheets/application.sass */
+  /* line 180, ../../../app/stylesheets/application.sass */
   span.label.green:hover, .mini-button.green:hover {
     color: black; }
 
-/* line 157, ../../../app/stylesheets/application.sass */
+/* line 183, ../../../app/stylesheets/application.sass */
 .mini-button.green {
   border-top: 1px solid #0e0;
   border-left: 1px solid #0e0;
   border-right: 1px solid #040;
   border-bottom: 1px solid #040; }
 
-/* line 163, ../../../app/stylesheets/application.sass */
+/* line 189, ../../../app/stylesheets/application.sass */
 span.label.black, .mini-button.black {
   background-position: 0px -120px;
   color: #fff; }
 
-/* line 167, ../../../app/stylesheets/application.sass */
+/* line 193, ../../../app/stylesheets/application.sass */
 .mini-button.black {
   border-top: 1px solid #666;
   border-left: 1px solid #666;

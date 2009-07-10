@@ -34,9 +34,9 @@
   display: block;
   height: 21px;
   overflow: hidden;
-  width: 938px;
+  width: 940px;
   padding:5px;
-  border:solid 1px #dedede;
+  border-bottom:solid 1px #dedede;
   background:#fff;
 }
 .breadCrumb ul
