@@ -3876,3 +3876,90 @@ Rendering template within layouts/application
 Rendering posts/new
 Rendered posts/_form (1605.5ms)
 Completed in 4501ms (View: 2929, DB: 1201) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (775.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (95.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1295.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+  [4;35;1mRole Columns (0.0ms)[0m   [0mMysql::Error: Table 'studjaro_development.roles' doesn't exist: SHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+  [4;35;1mRole Columns (0.0ms)[0m   [0mMysql::Error: Table 'studjaro_development.roles' doesn't exist: SHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (13.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+  [4;35;1mRole Columns (0.0ms)[0m   [0mMysql::Error: Table 'studjaro_development.roles' doesn't exist: SHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+  [4;35;1mRole Columns (0.0ms)[0m   [0mMysql::Error: Table 'studjaro_development.roles' doesn't exist: SHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+  [4;35;1mSQL (505.9ms)[0m   [0mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mRole Columns (74.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (47.4ms)[0m   [0;1mINSERT INTO `roles` (`name`, `created_at`, `updated_at`, `description`) VALUES('admin', '2009-07-11 23:30:14', '2009-07-11 23:30:14', 'super user')[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (0.4ms)[0m   [0mINSERT INTO `roles` (`name`, `created_at`, `updated_at`, `description`) VALUES('manager', '2009-07-11 23:30:14', '2009-07-11 23:30:14', 'institution\'s manager')[0m
+  [4;36;1mSQL (14.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.4ms)[0m   [0;1mINSERT INTO `roles` (`name`, `created_at`, `updated_at`, `description`) VALUES('director', '2009-07-11 23:30:14', '2009-07-11 23:30:14', 'unit\'s director')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Create (0.5ms)[0m   [0mINSERT INTO `roles` (`name`, `created_at`, `updated_at`, `description`) VALUES('teacher', '2009-07-11 23:30:14', '2009-07-11 23:30:14', 'teacher')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRole Create (0.4ms)[0m   [0;1mINSERT INTO `roles` (`name`, `created_at`, `updated_at`, `description`) VALUES('student', '2009-07-11 23:30:14', '2009-07-11 23:30:14', 'student')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090711231417')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (14.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (174.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-07-11 21:43:41) [GET]
+  [4;36;1mPost Columns (442.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (1076.9ms)
+Completed in 2466ms (View: 1527, DB: 616) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (198.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (254.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (95.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090709024701)
+Migrating to CreateRoles (20090711231417)
+Migrating to CreateUsers (20090712001043)
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1796.1ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `name` varchar(100) DEFAULT '', `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (859.3ms)[0m   [0mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090712001043')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (77.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (14.5ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (32.7ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (14.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
