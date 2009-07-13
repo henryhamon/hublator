@@ -127,80 +127,83 @@ div.middle-container {
         font-weight: normal;
         padding: 3px 15px 10px 15px; }
         /* line 125, ../../../app/stylesheets/application.sass */
+        div.middle-container ul.tabs.subnav li a:hover {
+          color: white; }
+        /* line 128, ../../../app/stylesheets/application.sass */
         div.middle-container ul.tabs.subnav li a.selected {
           border: none;
           background: url(/images/subnav_arrow.png) bottom  no-repeat; }
 
-/* line 129, ../../../app/stylesheets/application.sass */
+/* line 132, ../../../app/stylesheets/application.sass */
 div#main {
   background: #fff; }
 
-/* line 135, ../../../app/stylesheets/application.sass */
+/* line 138, ../../../app/stylesheets/application.sass */
 span.label, .mini-button, a.mini-button {
   padding: 2px 10px;
   background: url(/images/gradients.png) top repeat-x;
   color: #333333;
   font-weight: bold;
   font-size: 0.8em; }
-  /* line 142, ../../../app/stylesheets/application.sass */
+  /* line 145, ../../../app/stylesheets/application.sass */
   span.label:hover, .mini-button:hover, a.mini-button:hover {
     text-decoration: none;
     color: #007ac3; }
 
-/* line 147, ../../../app/stylesheets/application.sass */
+/* line 150, ../../../app/stylesheets/application.sass */
 .mini-button {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #666;
   border-bottom: 1px solid #666; }
 
-/* line 154, ../../../app/stylesheets/application.sass */
+/* line 157, ../../../app/stylesheets/application.sass */
 span.label.red, .mini-button.red {
   background-position: 0px -30px;
   color: #fff; }
 
-/* line 158, ../../../app/stylesheets/application.sass */
+/* line 161, ../../../app/stylesheets/application.sass */
 .mini-button.red {
   border-top: 1px solid #d00;
   border-left: 1px solid #d00;
   border-right: 1px solid #400;
   border-bottom: 1px solid #400; }
-  /* line 164, ../../../app/stylesheets/application.sass */
+  /* line 167, ../../../app/stylesheets/application.sass */
   .mini-button.red:hover {
     color: black; }
 
-/* line 167, ../../../app/stylesheets/application.sass */
+/* line 170, ../../../app/stylesheets/application.sass */
 span.label.yellow, .mini-button.yellow {
   background-position: 0px -60px; }
 
-/* line 170, ../../../app/stylesheets/application.sass */
+/* line 173, ../../../app/stylesheets/application.sass */
 .mini-button.yellow {
   border-top: 1px solid #ffdd00;
   border-left: 1px solid #ffdd00;
   border-right: 1px solid #cc8000;
   border-bottom: 1px solid #cc8000; }
 
-/* line 176, ../../../app/stylesheets/application.sass */
+/* line 179, ../../../app/stylesheets/application.sass */
 span.label.green, .mini-button.green {
   background-position: 0px -90px;
   color: #fff; }
-  /* line 180, ../../../app/stylesheets/application.sass */
+  /* line 183, ../../../app/stylesheets/application.sass */
   span.label.green:hover, .mini-button.green:hover {
     color: black; }
 
-/* line 183, ../../../app/stylesheets/application.sass */
+/* line 186, ../../../app/stylesheets/application.sass */
 .mini-button.green {
   border-top: 1px solid #0e0;
   border-left: 1px solid #0e0;
   border-right: 1px solid #040;
   border-bottom: 1px solid #040; }
 
-/* line 189, ../../../app/stylesheets/application.sass */
+/* line 192, ../../../app/stylesheets/application.sass */
 span.label.black, .mini-button.black {
   background-position: 0px -120px;
   color: #fff; }
 
-/* line 193, ../../../app/stylesheets/application.sass */
+/* line 196, ../../../app/stylesheets/application.sass */
 .mini-button.black {
   border-top: 1px solid #666;
   border-left: 1px solid #666;
