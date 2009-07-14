@@ -18,15 +18,15 @@
     // @head => main-nav, page_title, etc...
     .header-container{}
       .container
-        .span-24{:id => 'header'}
+        #header.span-24
 
-          #top_track
-            .span-24.right
-              %a{:href => '#', :class => 'mini-button item'} default
-              %a{:href => '#', :class => 'mini-button red item'} red
-              %a{:href => '#', :class => 'mini-button yellow item'} yellow
-              %a{:href => '#', :class => 'mini-button green item'} green
-              %a{:href => '#', :class => 'mini-button black item'} black
+          #top_track.right
+            .span-23
+              -form_tag( 'search', :class => 'search_form' ) do
+                =text_field_tag 'what', '', :class => 'text'
+            .span-1.last
+              =link_to 'login', login_path
+
 
           %h1{:id => 'page_title'}= @page_title || 'Studjaro'
 

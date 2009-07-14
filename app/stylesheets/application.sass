@@ -1,16 +1,17 @@
 !blue = #007ac3
 !light_gray = #f3f3f3
+!medium_light_gray = #a0a0a0
 !medium_gray = #666666
 !dark_gray = #333333
 !black = #000000
 !white = #ffffff
+
 body
   background = !light_gray
   margin: auto
   color = !medium_gray
-
+  font-family: "Helvetica Neue","Lucida Grande","Helvetica Neue",Arial,sans-serif !important
 //generic tags
-
 a
   color = !blue
   text-decoration: none
@@ -48,21 +49,13 @@ div#header
   position: relative
 
   div#top_track
-    margin-top: 5px
+    padding-top: 5px
     display: block
     position: relative
 
-    .item
-      margin-right: 5px
-      margin-left: 0px
-
-  .right
-    text-align: right
-
-    .item
-      margin-left: 5px
-      margin-right: 0px
-
+    a
+      padding: 3px 0px
+      display: block
 
   h1
     color = !dark_gray
@@ -199,4 +192,20 @@ span.label.black, .mini-button.black
   border-right: 1px solid #000
   border-bottom: 1px solid #000
 
+// forms
 
+form.search_form
+  width: 160px
+  padding: 0px
+  margin: 0px
+  float: right
+
+  input.text
+    width: 135px
+    border= 1px solid !medium_light_gray
+    padding: 3px 3px 3px 20px
+    background= !white url(/images/search.png) no-repeat
+    display: inline
+    font-size: .9em
+    margin: 0px auto
+    color = !medium_gray
