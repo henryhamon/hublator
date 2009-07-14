@@ -1,5 +1,5 @@
 public/assets/*
-log/*.log
+log/*
 tmp/*
 nbproject/*
 config/configuration.yml
