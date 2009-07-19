@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem "rspec", :lib => false, :version => '>=1.2.7'
   config.gem "rspec-rails", :lib => false, :version => '>=1.2.7'
   config.gem "thoughtbot-factory_girl", :lib    => "factory_girl", :source => "http://gems.github.com"
+  config.gem "ya2yaml"
 
 
   # Only load the plugins named here, in the order given (default is alphabetical).

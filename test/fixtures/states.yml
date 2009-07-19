@@ -1,0 +1,131 @@
+--- 
+states_0000001: 
+  abreviation: AC
+  id: "01"
+  name: Acre
+states_0000002: 
+  abreviation: AL
+  id: "02"
+  name: Alagoas
+states_0000003: 
+  abreviation: AM
+  id: "03"
+  name: Amazonas
+states_0000004: 
+  abreviation: AP
+  id: "04"
+  name: !binary |
+      QW1hcOE=
+
+states_0000005: 
+  abreviation: BA
+  id: "05"
+  name: Bahia
+states_0000006: 
+  abreviation: CE
+  id: "06"
+  name: !binary |
+      Q2VhcuE=
+
+states_0000007: 
+  abreviation: DF
+  id: "07"
+  name: "Distrito Federal"
+states_0000008: 
+  abreviation: ES
+  id: 08
+  name: !binary |
+      RXNw7XJpdG8gU2FudG8=
+
+states_0000009: 
+  abreviation: GO
+  id: 09
+  name: !binary |
+      R29p4XM=
+
+states_0000010: 
+  abreviation: MA
+  id: "10"
+  name: !binary |
+      TWFyYW5o428=
+
+states_0000011: 
+  abreviation: MG
+  id: "11"
+  name: "Minas Gerais"
+states_0000012: 
+  abreviation: MS
+  id: "12"
+  name: "Mato Grosso do Sul"
+states_0000013: 
+  abreviation: MT
+  id: "13"
+  name: "Mato Grosso"
+states_0000014: 
+  abreviation: PA
+  id: "14"
+  name: !binary |
+      UGFy4Q==
+
+states_0000015: 
+  abreviation: PB
+  id: "15"
+  name: !binary |
+      UGFyYe1iYQ==
+
+states_0000016: 
+  abreviation: PE
+  id: "16"
+  name: Pernambuco
+states_0000017: 
+  abreviation: PI
+  id: "17"
+  name: !binary |
+      UGlhde0=
+
+states_0000018: 
+  abreviation: PR
+  id: "18"
+  name: !binary |
+      UGFyYW7h
+
+states_0000019: 
+  abreviation: RJ
+  id: "19"
+  name: "Rio de Janeiro"
+states_0000020: 
+  abreviation: RN
+  id: "20"
+  name: "Rio Grande do Norte"
+states_0000021: 
+  abreviation: RO
+  id: "21"
+  name: !binary |
+      Um9uZPRuaWE=
+
+states_0000022: 
+  abreviation: RR
+  id: "22"
+  name: Roraima
+states_0000023: 
+  abreviation: RS
+  id: "23"
+  name: "Rio Grande do Sul"
+states_0000024: 
+  abreviation: SC
+  id: "24"
+  name: "Santa Catarina"
+states_0000025: 
+  abreviation: SE
+  id: "25"
+  name: Sergipe
+states_0000026: 
+  abreviation: SP
+  id: "26"
+  name: !binary |
+      U+NvIFBhdWxv
+
+states_0000027: 
+  abreviation: TO
+  id: "27"
+  name: Tocantins
