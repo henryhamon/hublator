@@ -1,0 +1,8 @@
+- content_tag_for :div, asset do
+  %ul
+    %li
+      %strong Name:
+      =h asset.name
+    = link_to 'Show', asset
+    = link_to 'Edit', edit_asset_path(asset)
+    = link_to 'Destroy', asset, :confirm => 'Are you sure?', :method => :delete

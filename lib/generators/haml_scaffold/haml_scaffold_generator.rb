@@ -69,7 +69,13 @@ class HamlScaffoldGenerator < Rails::Generator::NamedBase
 
       m.route_resources controller_file_name
 
-      m.dependency 'model', [name] + @args, :collision => :skip
+      unless options[:skip_migration]
+        m.migration_template 'migration.rb', 'db/migrate', :assigns => {
+          :migration_name => "Create#{class_name.pluralize.gsub(/::/, '')}"
+        }, :migration_file_name => "create_#{file_path.gsub(/\//, '_').pluralize}"
+      end
+
+      m.dependency 'model', [name] + @args, :collision => :skip, :skip_migration => true
     end
   end
 

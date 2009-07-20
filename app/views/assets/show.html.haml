@@ -1,0 +1,10 @@
+%div.inner
+  %h2= "Asset \"#{@asset.to_param}\""
+  - content_tag_for :div, @asset do
+    %ul
+        %li
+        %strong Name:
+        =h @asset.name
+    %ul
+    %li= link_to 'Edit', edit_asset_path(@asset)
+    %li= link_to 'Back', assets_path

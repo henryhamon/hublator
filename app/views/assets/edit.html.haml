@@ -1,0 +1,6 @@
+%div.inner
+  %h2 Editando asset
+  = render :partial => "form", :locals => {:asset => @asset}
+  %ul
+    %li= link_to 'Ver', @asset
+    %li= link_to 'Voltar', assets_path

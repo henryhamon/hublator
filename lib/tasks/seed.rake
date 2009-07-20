@@ -5,7 +5,7 @@ destiny = YAML.load(File.open(File.join(File.dirname(__FILE__), '..', '..', 'con
 
 dump = lambda do |environment|
   params = destiny[environment.to_s]
-  sql = File.expand_path(File.join(File.dirname(__FILE__), '..', 'states_and_cities.sql'))
+  sql = File.expand_path(File.join(File.dirname(__FILE__), '..', "states_and_cities_#{environment}.sql"))
   system("mysqldump -u#{params['username']} -p#{params['password']} #{params['database']} < #{sql}")
 end
 

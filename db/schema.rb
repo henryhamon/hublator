@@ -9,12 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090719064052) do
+ActiveRecord::Schema.define(:version => 20090719073948) do
+
+  create_table "addresses", :force => true do |t|
+    t.string   "street"
+    t.integer  "number"
+    t.string   "district"
+    t.integer  "city_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "addresses", ["city_id"], :name => "index_addresses_on_city_id"
+  add_index "addresses", ["district"], :name => "index_addresses_on_district"
+  add_index "addresses", ["street"], :name => "index_addresses_on_street"
+  add_index "addresses", ["user_id"], :name => "fk_addresses_users"
 
   create_table "cities", :force => true do |t|
-    t.string  "name",     :limit => 100
-    t.integer "state_id", :limit => 2
+    t.integer "state_id",               :default => 0,  :null => false
+    t.string  "name",     :limit => 50, :default => "", :null => false
   end
+
+  add_index "cities", ["id"], :name => "id", :unique => true
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -23,30 +40,35 @@ ActiveRecord::Schema.define(:version => 20090719064052) do
     t.datetime "updated_at"
   end
 
-  create_table "roles", :force => true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "states", :force => true do |t|
-    t.string "name",        :limit => 30
-    t.string "abreviation", :limit => 2
+    t.string "abreviation", :limit => 10, :default => "", :null => false
+    t.string "name",        :limit => 20, :default => "", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string   "login",                     :limit => 40
-    t.string   "name",                      :limit => 100, :default => ""
-    t.string   "email",                     :limit => 100
-    t.string   "crypted_password",          :limit => 40
-    t.string   "salt",                      :limit => 40
+    t.string   "name",                               :null => false
+    t.date     "birthdate",                          :null => false
+    t.string   "home_phone"
+    t.string   "mobile_phone"
+    t.string   "email",                              :null => false
+    t.string   "login",                              :null => false
+    t.string   "crypted_password",                   :null => false
+    t.string   "password_salt",                      :null => false
+    t.string   "persistence_token",                  :null => false
+    t.string   "single_access_token",                :null => false
+    t.string   "perishable_token",                   :null => false
+    t.integer  "login_count",         :default => 0, :null => false
+    t.integer  "failed_login_count",  :default => 0, :null => false
+    t.datetime "last_request_at"
+    t.datetime "current_login_at"
+    t.datetime "last_login_at"
+    t.string   "current_login_ip"
+    t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "remember_token",            :limit => 40
-    t.datetime "remember_token_expires_at"
   end
 
-  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+  add_index "users", ["login"], :name => "index_users_on_login"
+  add_index "users", ["name"], :name => "index_users_on_name"
 
 end

@@ -1,15 +1,24 @@
 !blue = #007ac3
+!light_blue = #e4f4ff
 !light_gray = #f3f3f3
-!medium_light_gray = #a0a0a0
-!medium_gray = #666666
+!medium_gray = #a0a0a0
+!medium_light_gray = #d5d5d5
+!medium_dark_gray = #666666
 !dark_gray = #333333
 !black = #000000
 !white = #ffffff
 
+=borders(!color1, !color2)
+  border-top= 1px solid !color1
+  border-left= 1px solid !color1
+  border-right= 1px solid !color2
+  border-bottom= 1px solid !color2
+
+
 body
   background = !light_gray
   margin: auto
-  color = !medium_gray
+  color = !medium_dark_gray
   font-family: "Helvetica Neue","Lucida Grande","Helvetica Neue",Arial,sans-serif !important
 //generic tags
 a
@@ -21,13 +30,14 @@ a
     color = !blue
     text-decoration: underline
 
-h1
-  color = !medium_gray
+h1, h3
+  color = !medium_dark_gray
 
 h2
   color = !blue
+
 div.container.border
-  border = 1px solid #d5d5d5
+  border = 1px solid !medium_light_gray
   margin: auto
   marging-right: auto
   padding-right: 0px
@@ -35,6 +45,34 @@ div.container.border
 div.inner
   display: block
   padding: 20px
+  overflow: hidden
+
+div.align-right
+  text-align: right
+// set the border position for column
+
+div.right-toolbox a
+  font-weight: bold
+  font-size: 1.2em
+
+a.big-button-to-new
+  background: url(/images/big_button_to_new.png) 0px 0px no-repeat
+  padding: 6px 10px 6px 40px
+  display: block
+  color = !dark_gray
+  +borders(!medium_light_gray, !medium_gray)
+
+  &:hover
+    text-decoration: none
+    background-position: left bottom
+    +borders(!medium_gray, !medium_gray)
+
+.columns-17-7
+  background-image: url(/images/border.png)
+  background-repeat: repeat-y
+  background-position: 670px 0px
+  overflow: hidden
+
 
 div.header-container
   background: url(/images/top.png) bottom repeat-x
@@ -122,9 +160,44 @@ div.middle-container
           border: none
           background: url(/images/subnav_arrow.png) bottom  no-repeat
 
+
+
 div#main
   background: #fff
+  div.context-tools
+    display: block
+    overflow: hidden
+    padding: 0px 20px
+    background = !light_blue url(/images/border.png) bottom repeat-x
 
+    form.search_form
+      margin-top: 2px
+
+      input
+        border= 1px solid !medium_light_gray
+
+
+    ul.context-nav
+      border: none
+      margin: auto
+
+      li
+        background: none
+        border: none
+
+        a 
+          background: none
+          border: none
+          font-weight: normal
+          padding: 5px 15px
+          color = !blue
+
+          &.selected
+            background= !white
+            border: none
+            color = !medium_dark_gray
+            border-left: 1px solid #d5d5d5
+            border-right: 1px solid #d5d5d5
 
 // mini buttons
 
@@ -141,10 +214,7 @@ span.label, .mini-button, a.mini-button
 
 
 .mini-button
-  border-top: 1px solid #ddd
-  border-left: 1px solid #ddd
-  border-right: 1px solid #666
-  border-bottom: 1px solid #666
+  +borders(#ddd, #666)
 
 
 span.label.red, .mini-button.red
@@ -202,10 +272,32 @@ form.search_form
 
   input.text
     width: 135px
-    border= 1px solid !medium_light_gray
+    border= 1px solid !medium_gray
     padding: 3px 3px 3px 20px
     background= !white url(/images/search.png) no-repeat
     display: inline
     font-size: .9em
     margin: 0px auto
-    color = !medium_gray
+    color = !medium_dark_gray
+
+
+// pagination
+
+.pagination
+  span, a
+    padding: 3px 5px
+    border: 1px solid #ddd
+    color = !dark_gray
+    background: url(/images/gradients.png) top repeat-x
+  a
+    +borders(#ddd, #666)
+
+  .current
+    background = !blue
+    color = !white
+    border = 1px solid !blue
+
+  .disabled
+    background = !medium_light_gray
+    border = 1px solid !medium_light_gray
+

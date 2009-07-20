@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   before_filter :find_post
 
-  POSTS_PER_PAGE = 20
+  POSTS_PER_PAGE = 2
 
   def index
     @posts = Post.paginate(:page => params[:page], :per_page => POSTS_PER_PAGE)

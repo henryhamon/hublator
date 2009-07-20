@@ -2,12 +2,10 @@
   %h2= "Post \"#{@post.to_param}\""
   - content_tag_for :div, @post do
     %ul
-        %li
-        %strong Title:
-        =h @post.title
-        %li
-        %strong Body:
-        =h @post.body
+      %li
+        %strong=h 'Title: ' + @post.title
+      %li
+        =h 'Body: ' + @post.body
     %ul
-    %li= link_to 'Edit', edit_post_path(@post)
-    %li= link_to 'Back', posts_path
+      %li= link_to 'Edit', edit_post_path(@post)
+      %li= link_to 'Back', posts_path

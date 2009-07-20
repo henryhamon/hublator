@@ -63,19 +63,17 @@
 
     .main-container
       .container.border
-        .span-24{:id => 'main'}
-
-          .breadCrumbHolder.module
-            #breadcrumb.breadCrumb.module
-              %ul
-                %li.first
-                  %a{:href => '#'} item 1
-                %li 
-                  %a{:href => '#'} item 2
-                %li 
-                  %a{:href => '#'} item long long item just to see the behavior
-                %li current item
-
+        .breadCrumbHolder.module.span-17
+          #breadcrumb.breadCrumb.module
+            %ul
+              %li.first
+                %a{:href => '#'} Home
+              %li 
+                %a{:href => '#'} item 2
+              %li 
+                %a{:href => '#'} item long long item just to see the behavior
+              %li current item
+        #main.span-24
           = yield
 
     // @foot => app description, links, etc..
