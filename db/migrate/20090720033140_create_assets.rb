@@ -5,7 +5,6 @@ class CreateAssets < ActiveRecord::Migration
 
       t.timestamps
     end
-    puts 'teste'
   end
 
   def self.down

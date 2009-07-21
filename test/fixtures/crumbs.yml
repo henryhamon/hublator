@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  route: MyString
+  parent_id: 1
+
+two:
+  route: MyString
+  parent_id: 1

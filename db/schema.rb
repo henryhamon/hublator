@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090719073948) do
+ActiveRecord::Schema.define(:version => 20090721035833) do
 
   create_table "addresses", :force => true do |t|
     t.string   "street"
@@ -26,12 +26,25 @@ ActiveRecord::Schema.define(:version => 20090719073948) do
   add_index "addresses", ["street"], :name => "index_addresses_on_street"
   add_index "addresses", ["user_id"], :name => "fk_addresses_users"
 
+  create_table "assets", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "cities", :force => true do |t|
     t.integer "state_id",               :default => 0,  :null => false
     t.string  "name",     :limit => 50, :default => "", :null => false
   end
 
   add_index "cities", ["id"], :name => "id", :unique => true
+
+  create_table "crumbs", :force => true do |t|
+    t.string   "route"
+    t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"

@@ -15,7 +15,6 @@
       %h2 Posts
       - if !@posts.empty?
         = render :partial => "post", :collection => @posts
-        = Route.test
         %hr
         .span-5
           = link_to 'Incluir Post', new_post_path, :class => 'mini-button'
