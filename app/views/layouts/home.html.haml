@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %title Studjaro - Gerenciamento de Informações Acadêmicas
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    /[if IE]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'tabs/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/home.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'jBreadCrumb.css', :media => 'screen, projection'
+    = javascript_include_tag 'jquery-1.3.2.min.js'
+    = javascript_include_tag 'jquery.form.js'
+    = javascript_include_tag 'application.js'
+
+  %body
+
+    // @head => main-nav, page_title, etc...
+    .home-header-container{}
+      .container
+        #header.span-24
+          #login.span-24
+
+    .push_down
+    .main-container
+      .container.border
+        #main.span-24
+          = yield
+
+    // @foot => app description, links, etc..
+    .foot-container
+      .container
+        .span-24{:id => 'footer'}
