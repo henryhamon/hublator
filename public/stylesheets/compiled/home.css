@@ -1,4 +1,4 @@
-/* line 77, ../../../app/stylesheets/application.sass */
+/* line 2, ../../../app/stylesheets/home.sass */
 div.home-header-container {
   background: url(/images/home/home_top_bg.png) top repeat-x;
   display: block;
@@ -6,29 +6,23 @@ div.home-header-container {
   height: 135px;
   overflow: hidden; }
 
-/* line 84, ../../../app/stylesheets/application.sass */
+/* line 9, ../../../app/stylesheets/home.sass */
 div#header {
   background: url(/images/home/logo.png) no-repeat;
   display: block;
   height: 135px;
-  position: relative;
-}
-
-  /* line 89, ../../../app/stylesheets/application.sass */
-  div#login{
+  position: relative; }
+  /* line 15, ../../../app/stylesheets/home.sass */
+  div#header div#login {
     background: url(/images/home/home_login.png) top right no-repeat;
-    height:42px;
-    padding-top: 5px;
-    display: block;
-    position: relative; }
+    padding-top: 5px; }
 
-div.push_down { height:20px; }
+
+/* line 23, ../../../app/stylesheets/home.sass */
 div.blackboard {
   background: url(/images/home/home_blackboard.png) top left no-repeat;
   display: block;
   position: relative;
   height: 325px;
-  overflow: hidden; 
-  margin: 10px 0 10px 0;
-}
-
+  overflow: hidden;
+  margin: 10px 0 10px 0; }

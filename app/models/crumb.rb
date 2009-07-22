@@ -19,8 +19,6 @@ class Crumb < ActiveRecord::Base
     splited_route[1..-1]
   end
 
-  @test = 0
-
   def sanitize_route!
     self.route = self.class.sanitize_route(route)
     save
@@ -28,13 +26,14 @@ class Crumb < ActiveRecord::Base
 
   def set_parents!
     begin
-      parent_id = Crumb.find_by_route(ancestors_routes.first).id
+      self.parent_id = Crumb.find_by_route(ancestors_routes.first).id
+      puts "#{route} ===> GOT #{parent_id}"
       save
     rescue
-      parent = Crumb.create(:route => ancestors_routes.first)
-      self.parent_id = parent.id
+      _parent_ = Crumb.create(:route => ancestors_routes.first)
+      self.parent_id = _parent_.id
       self.save
-      parent.set_parents!
+      _parent_.set_parents!
       save
     end
   end
@@ -42,7 +41,7 @@ class Crumb < ActiveRecord::Base
   private
 
   def self.sanitize_route(route)
-    route.gsub(/(\(.*\))/, '')
+    route.gsub(/(\(.*\))/, '').gsub(/:\w*-*/, ':id')
   end
 
   def self.split_route(route, stack = [])
