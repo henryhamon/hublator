@@ -74,7 +74,9 @@ class AssetsController < ApplicationController
   private
 
   def find_asset
-    @asset = Asset.find(params[:id]) if params[:id]
+    @entities = []
+    @entities << @post = Post.find(params[:post_id]) if params[:post_id]
+    @entities << @asset = params[:id] ? @post.assets.find(params[:id]) : controller_name.to_sym
   end
 
 end

@@ -33,6 +33,7 @@ describe Crumb do
   it 'should create the crumb and link create its parents' do
 
     @crumb = Crumb.create(:route => '/posts/:post_id/assets/:id(.:format)')
+    puts @crumb.ancestors_routes
     @crumb.set_parents!
 
     ([@crumb] + @crumb.ancestors).map {|c| c.route }.should == @crumb.splited_route
@@ -47,14 +48,8 @@ describe Crumb do
     @crumb = Crumb.create(:route => '/posts/:post_id/assets/:id(.:format)')
     @crumb.set_parents!
 
-    puts "#{@ancestor.id} ===> #{@ancestor.route}"
-    puts @ancestor.ancestors.map{|e| "#{e.id} ===> #{e.route} " }.join("\n")
-    puts '---------------'
-    puts "#{@crumb.id} ===> #{@crumb.route}"
-    puts @crumb.ancestors.map{|e| "#{e.id} ===> #{e.route} " }.join("\n")
-
     @crumb.splited_route.include?(@ancestor.route).should be_true
-    @crumb.ancestors.map{|e| e.id }.include?(@ancestor.ancestors.map {|e| e.id }).should be_true
+    @crumb.ancestors.last.id.should == @ancestor.ancestors.last.id
 
   end
 

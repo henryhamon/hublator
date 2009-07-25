@@ -65,14 +65,7 @@
       .container.border
         .breadCrumbHolder.module.span-17
           #breadcrumb.breadCrumb.module
-            %ul
-              %li.first
-                %a{:href => '#'} Home
-              %li 
-                %a{:href => '#'} item 2
-              %li 
-                %a{:href => '#'} item long long item just to see the behavior
-              %li current item
+            = breadcrumb
         #main.span-24
           = yield
 
