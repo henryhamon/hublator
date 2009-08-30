@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+require "simple-daemon"
+require "gdata_convert.rb"
+require File.join(File.dirname(__FILE__), "..", "config", "environment.rb")
+
+def get_projects
+  projects = Project.find(:all,
+                                :conditions => { :status => 'pending' },
+                                :limit => 3,
+                                :order => ["created_at ASC"])
+end
+class FileDaemon < SimpleDaemon::Base
+p 'teste'
+  SimpleDaemon::WORKING_DIRECTORY = "#{RAILS_ROOT}/tmp"
+p  RAILS_ENV='production'
+  def self.start
+    loop do
+      date = Time.new.strftime('%Y-%m-%d %H:%M:%S')
+
+      projects = get_projects
+p projects.size
+      projects.each do |project|
+        doc = GDataConvert::Document.new(project.name, "#{RAILS_ROOT}/public/#{project.attachment.url}", project.attachment_content_type)
+        doc.pages.each_with_index do |page, i|
+          Page.create!(:project_id => project.id,
+                       :language_id => project.default_language.id,
+                       :page_number => i,
+                       :content => page,
+                       :finished => 0,
+                       :created_at => date,
+                       :updated_at => date)
+        end
+        project.processed!
+      end
+      sleep(50)
+    end
+  end
+
+  def self.stop
+  end
+end
+
+FileDaemon.daemonize
+

@@ -1,0 +1,40 @@
+- form_for @user do |f|
+
+  = f.error_messages
+  %p
+    = f.label :login
+    %br
+    = f.text_field :login
+
+
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+
+  %p
+    = f.label :email
+    %br
+    = f.text_field :email
+  - if @user.openid_identifier.blank?
+
+    %p
+      = f.label :password
+      %br
+      = f.password_field :password
+
+    %p
+      = f.label :password_confirmation
+      %br
+      = f.password_field :password_confirmation
+  %p
+    = f.submit "Submit"
+
+  %h2 Or use OpenID
+  %p
+    = f.label :openid_identifier, "OpenID URL"
+    %br
+    = f.text_field :openid_identifier
+  %p
+    = f.submit "Submit"
+

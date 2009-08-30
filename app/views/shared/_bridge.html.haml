@@ -1,0 +1,22 @@
+.bridge
+  .inner
+    .span-8
+      = link_to(image_tag('/images/commons/logo_01.png'), '/')
+      %h3 Translate it!
+    .span-7
+      -form_tag search_projects_path, :class => 'search_form' do
+        =text_field_tag :query, '', :class => 'text'
+        =submit_tag 'SEARCH'
+    .span-8.last
+      #user-data
+        .inner
+          .span-3.avatar
+            = image_tag current_user.gravatar_url, :class => 'avatar'
+          .span-4.last
+            = content_tag :h4, link_to(current_user.name, dashboard_user_path(current_user))
+            = link_to 'edit profile', edit_user_path(current_user)
+            %h5 Reputation
+            %p{:class => 'quiet'}
+              = "Consistency: #{current_user.consistency_rate}"
+              = "Translation: #{current_user.translation_rate}"
+

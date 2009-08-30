@@ -1,0 +1,9 @@
+= render :partial => 'shared/bridge'
+.content
+  .inner
+    %h2 Create a new Project
+
+    - form_for(@project, :html => { :multipart => true } ) do |f|
+      = render :partial => "form", :locals => {:project => @project, :f => f }
+
+

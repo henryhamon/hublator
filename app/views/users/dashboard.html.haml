@@ -1,0 +1,61 @@
+= render :partial => 'shared/bridge'
+.content
+  .following.span-24
+    %h3 Following
+    .followers
+      = network(@user.connections)
+
+  .span-8
+    .inner
+      %h3 Activities
+      %table.projects-mini-list
+        - activities(current_user.feeds) do |activity| #activities
+          %tr
+            %td
+              = activity
+
+  .span-8
+    .inner
+      %h3 Projects <span><a href="/projects/new">create new</a></span>
+      %table.projects-mini-list
+        - @user.projects.each do |project|
+          %tr
+            %td
+              = link_to project.name, project_path(project)
+              %br
+              = "#{project.pages.size} pages"
+            %td.banners
+              - project.progress_with_banners.each do |idiom|
+                = image_tag "/images/flags/#{idiom[:banner]}.png"
+                = "#{idiom[:progress]}%"
+                %br
+
+  .span-8.last
+    .inner
+      %h3 Is involved in
+      %table.projects-mini-list
+        - @user.interpreters.each do |p|
+        - page = p.page
+          %tr
+            %td
+              = link_to "#{page.project.name} - Page #{page.page_number}", project_path(page.project)
+              %br
+              = "#{page.project.pages.size} pages"
+            %td.banners
+              = image_tag "/images/flags/#{page.language.abbr}.png"
+              %br
+
+  .span-24.blue
+    .inner
+      %h3 You can help these projects:
+      %table.projects-big-list
+        %tr
+          - @recent_projects.each do |project|
+            %td
+              = link_to project.name, project_path(project)
+              .margin-top
+                = "#{project.pages.size} pages"
+                - project.progress_with_banners.each do |idiom|
+                  = image_tag "/images/flags/#{idiom[:banner]}.png"
+                  = "#{idiom[:progress]}%"
+

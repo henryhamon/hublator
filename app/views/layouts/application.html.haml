@@ -1,0 +1,46 @@
+!!!
+%html
+  %head
+    %title hublator - Translate it!
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    /[if lt IE 8]
+    = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
+    = stylesheet_link_tag 'compiled/plugins/tabs/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
+
+    = javascript_include_tag :defaults
+
+  %body
+    #top-container
+      .container
+        .span-24
+          #top
+            #main-nav.span-19
+              = render :partial => 'shared/main_nav'
+            #login-box.span-5.last
+              %ul.tabs
+                - if current_user
+                  %li= link_to "Dashboard", dashboard_user_path(current_user)
+                  %li= link_to "Logout", '/logout'
+                - else
+                  %li= link_to "Login", login_path
+                  %li= link_to "Sign in", new_user_path
+    .container
+      .span-24
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}", :class => 'flash'
+
+        = yield
+    #bottom-container.margin-top
+      .container
+        .span-24
+          #bottom
+            .span-18
+              = render :partial => 'shared/main_nav'
+            .span-6.last.rights
+              2009 Hublator - all rights reserved
+
+
+

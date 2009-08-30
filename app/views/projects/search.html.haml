@@ -1,0 +1,19 @@
+= render :partial => 'shared/bridge'
+.content.margin-top
+  %h2 Search
+  %table{:class => 'search'}
+    %thead
+      %th
+        Project
+      %th
+        Languages
+    %tbody
+      - for project in @projects
+        %tr
+          %td
+            = link_to project.name, project_path(project)
+          %td.banner
+            - project.progress_with_banners.each do |idiom|
+              = image_tag "/images/flags/#{idiom[:banner]}.png"
+              = "#{idiom[:progress]}%"
+

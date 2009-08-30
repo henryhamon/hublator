@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: speeches
+#
+#  id          :integer         not null, primary key
+#  user_id     :integer         not null
+#  language_id :integer         not null
+#  level       :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  language: 
+  level: MyString
+
+two:
+  user: 
+  language: 
+  level: MyString

@@ -1,0 +1,37 @@
+= f.error_messages
+.span-10
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name, :class => 'text'
+  %p
+    = f.label :category
+    %br
+    = f.select :category, ["Article", "Book"]
+  %p
+    = f.label :description
+    %br
+    = f.text_area :description
+  %p
+    = label_tag :attachment
+    %br
+    = f.file_field :attachment, :size => 28
+    %br
+    %span Suported files: doc, txt and odt
+  %p
+    = f.submit "Submit"
+
+.span-10.last
+  %p
+    = label_tag 'Source language'
+    %br
+    = select_tag 'language[source]', options_for_select(@languages_source.map {|e| [e.name, e.id]})
+
+  - f.fields_for :translations do |t|
+    = label_tag 'Translate to'
+    %br
+    - @languages.each do |l|
+      %p
+        = check_box_tag "language[translations][]", l.id
+        = l.name
+

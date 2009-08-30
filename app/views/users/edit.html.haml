@@ -1,0 +1,76 @@
+=render :partial => 'shared/bridge'
+.content
+  - form_for @user do |f|
+
+    = f.error_messages
+    .span-11.colborder
+      .inner
+        %h2 Edit Profile
+
+        %p
+          = f.label :name
+          %br
+          = f.text_field :name
+
+        %p
+          = f.label :login
+          %br
+          = f.text_field :login
+
+        %p
+          = f.label :email
+          %br
+          = f.text_field :email
+
+        %p
+          = f.label :url
+          %br
+          = f.text_field :url
+
+        %p
+          = f.label :country
+          %br
+          = f.text_field :country
+
+        - if @user.openid_identifier.blank?
+
+          %p
+            = f.label :password
+            %br
+            = f.password_field :password
+
+          %p
+            = f.label :password_confirmation
+            %br
+            = f.password_field :password_confirmation
+        %p
+          = f.submit "Submit"
+    .span-12.last
+      .inner
+        %h2 Or use OpenID
+        %p
+          = f.label :openid_identifier, "OpenID URL"
+          %br
+          = f.text_field :openid_identifier
+        %p
+          = f.submit "Submit"
+    .span-24
+      .inner
+        %h2 Languages
+        - @languages.each do |language|
+          %p
+            - speech = @user.speechs.find(:last, :conditions => {:language_id => language.id})
+            - options = [['Fluent', 'fluent'], ['Advanced', 'advanced'], ['Intermediate', 'intermediate'], ['Newbie', 'newbie']]
+          %table.mini-list
+            %tr
+              %td
+                .span-3
+                  = check_box_tag 'language[id][]', language.id, (speech.nil? ? false : true)
+                  = label_tag "language_id_", language.name
+              %td
+                .span-4
+                  = label_tag "language_level_", 'Level'
+                  = select_tag 'language[level][]', options_for_select(options.collect{ |o| o }, (speech.nil? ? '' : speech.level))
+
+        = f.submit "Submit"
+

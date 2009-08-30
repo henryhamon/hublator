@@ -1,0 +1,44 @@
+.bridge.home
+  .bgnerd
+  .nerd
+  .inner
+    %img.logo{:src => '/images/commons/logo_01.png'}
+  .about_us.span-24
+    .span-6.append-11.prepend-1
+      %h3 Translate it!
+      %p 
+        It's time to make your work available to the whole planet! With Hublator, you can publish books and articles and organize the translation process in a few seconds. And likewise, you can help translating any work that is available to you. Come on, let's translate!
+    .span-6.last
+      .signup_free
+        - if current_user
+          = link_to "&#187; Dashboard", dashboard_user_path(current_user)
+        - else
+          = link_to "&#187; Sign up, it's Free!", new_user_path
+
+  .how_this_works
+.content.margin-top{:style => 'padding-left:20px'}
+  .span-7.colborder
+    %h3 Recent Projects
+    %table.projects-mini-list
+      - @recent_projects.each do |project|
+        %tr
+          %td
+            = link_to project.name, project_path(project)
+
+  .span-7.colborder
+    %h3 Hot Projects
+    %table.projects-mini-list
+      - @hot_projects.each do |project|
+        %tr
+          %td
+            = link_to project.name, project_path(project)
+
+
+
+  .span-7.last
+    %h3 Hall of Fame
+    %table.projects-mini-list
+      - @hall.each do |user|
+        %tr
+          %td
+            = link_to user.name, user_path(user)

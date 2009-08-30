@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: translations
+#
+#  id           :integer         not null, primary key
+#  project_id   :integer         not null
+#  language_id  :integer         not null
+#  project_type :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  project: 
+  language: 
+  type: MyString
+
+two:
+  project: 
+  language: 
+  type: MyString

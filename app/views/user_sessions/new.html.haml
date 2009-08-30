@@ -1,0 +1,27 @@
+.content
+  .innerc
+    %h2 Login
+    - form_for @user_session do |f|
+      .span-11
+        = f.error_messages
+        %p
+          = f.label :login
+          %br
+          = f.text_field :login, :class => 'text'
+
+        %p
+          = f.label :password
+          %br
+          = f.password_field :password, :class => 'text'
+
+        %p
+          = f.submit "Submit"
+
+      .span-11.last
+        %p
+          = f.label :openid_identifier, "OpenID URL"
+          %br
+          = f.text_field :openid_identifier, :class => 'text openid'
+        %p
+          = f.submit "Submit"
+

@@ -1,0 +1,285 @@
+!darkest_blue= #3987c9
+!dark_blue = #cddee6
+!medium_blue = #4487bf
+!light_blue = #dfedf6
+!light_brown = #f8f3ea
+!medium_brown = #d8cca2
+!slogan = #72736b
+!light_gray = #e6e6e6
+!medium_green = #01821d
+
+//top
+#top-container
+  background: url(/images/commons/bg_top.png) repeat-x
+  color: white
+  height: 65px
+
+  a, a:hover, a:visited
+    color: white
+    text-decoration: none
+
+#top ul.tabs, #bottom ul.tabs
+  border-bottom: none
+  margin-bottom: 0
+  li
+    border: none
+    background: none
+    a
+      background: none
+      font-size: 1.3em
+      border: none
+      line-height: 60px
+
+//flashes
+.flash
+  padding: 10px
+  margin: 10px auto
+#flash_notice
+  border: 5px solid green
+#flash_warning
+  border: 5px solid yellow
+#flash_error
+  border: 5px solid #900
+
+.avatar-medium
+  float: left
+  font-size: 9px
+  margin: 0.7em 0.7em 0.7em 0
+  a
+    margin-top: 8px
+    padding: 3px
+  img
+    border = 1px solid !light_gray
+    height: 45px
+    width: 45px
+
+img.avatar-mini
+  width: 20px
+  height: 20px
+  border = 4px solid !light_gray
+  margin-right: 5px
+  margin-bottom: 5px
+  &.left
+    float: left
+
+//content
+.margin-top
+  margin-top: 20px
+
+  li
+    padding-left: 10px
+
+.inner
+  padding: 20px
+  overflow: hidden
+.bridge
+  position: relative
+  background= !light_brown
+  &.home
+    height: 500px
+
+  img.logo
+    position: absolute
+    left: 20px
+    top: 20px
+  h3
+    font-family: lucida
+    color = !slogan
+    &.slogan
+      position: absolute
+      top: 40px
+      right: 20px
+
+  .how_this_works
+    background: url('/images/en/home/home.png') bottom center no-repeat
+    height: 131px
+    left: 36px
+    position: relative
+    width: 887px
+    top: 300px
+
+  .about_us
+    height: 120px
+    position: relative
+    margin-top: 50px
+    top: 53px
+
+  .signup_free
+    margin-top: 30px
+    a
+      -moz-border-radius: 30px
+      -webkit-border-radius: 30px
+      -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+      background-color: #F9A01F
+      border-bottom: 1px solid rgba(0,0,0,0.25)
+      color: #fff
+      display: inline-block
+      font-size: 1.56em
+      font-weight: bold
+      height: 45px
+      padding: 20px 20px 6px
+      text-decoration: none
+      text-shadow: 0 -1px 1px rgba(0,0,0,0.25)
+
+    a:hover
+      background-color: #DD8808
+
+  .bgnerd
+    background: url('/images/commons/bg_nerd2.png')
+    height: 324px
+    left: 80px
+    position: absolute
+    top: 116px
+    width: 803px
+
+  .nerd
+    background: url('/images/commons/nerd.png')
+    height: 341px
+    left: 344px
+    position: absolute
+    top: -50px
+    width: 317px
+
+  
+  
+  #user-data
+    background: white
+
+    img.avatar
+      width: 60px
+      height: 60px
+      border = 4px solid !light_gray
+    .span-3.avatar
+      width: 78px
+
+    h4, h5
+      margin-bottom: 0
+
+    p
+      font-size: 0.9em
+
+.content
+  h3
+    margin-bottom: 10px
+    span
+      font-size: 0.7em
+      font-weight: normal
+  ul.mini-list
+    list-style-type: none
+    list-style-position: inside
+    margin: auto
+
+  .inner.three-boxes .span-8
+    width: 296px
+    span.percente
+      font-size: 2em
+  .blue
+    background = !light_blue
+  .medium_blue
+    background = !dark_blue
+
+  .prepended
+    width: 260px
+    padding-left: 10px
+
+
+  table.mini-list
+    width: 350px
+    td
+      text-align: left
+
+  table.projects-mini-list
+    width: 270px
+    td
+      background: #f5f5f5
+      border-bottom: 3px solid #fff
+      a
+        text-decoration: none
+        color = !darkest_blue
+    td.banners
+      width:50px
+
+  table.projects-big-list
+    width: 910px
+    td
+      background = !medium_blue
+      border-right = 3px solid !light_blue
+      padding: 15px
+      a
+        text-decoration: none
+        color: #fff
+    td.banners
+      width:50px
+      
+.search, .big-table
+  border= 1px solid !light_blue
+  th 
+    background: url(/images/commons/bg_foot.png) bottom repeat-x
+    padding: 10px
+  td
+    padding: 10px
+    a
+      text-decoration: none
+      color= !medium_blue
+  td.banners
+    width:50px
+
+#bottom-container
+  border-top = 5px solid !light_gray
+  overflow: hidden
+  background: url(/images/commons/bg_foot.png) bottom repeat-x
+  #bottom
+    a, a:visited, a:hover
+      color = !medium_blue
+    .rights
+      line-height: 60px
+.nc
+  border: 3px solid #d7d7d7
+  background: url(/images/nc.png) no-repeat top right
+  height: 400px
+
+.following
+  border-bottom= 1px solid !medium_blue
+
+.followers
+  margin: 0.3em 0 0.3em 0
+  img
+    height: 35px
+    margin: 0.7em 0.7em 0.3em 0
+    width: 35px
+  h3
+    font-size: 10px
+    margin-bottom: 1px
+    padding: 0 0 2px 3px
+  .follow
+    float: left
+  a
+    font-size: 9px
+    margin-top: 8px
+    padding: 3px
+
+//forms
+form.search_form input.text
+  width: 180px
+textarea
+  width: 300px
+  height: 150px
+
+input.openid
+  background: url(http://wiki.openid.net/f/openid-16x16.gif) 3px 3px no-repeat
+  padding-left: 20px
+
+.pages_mini_list
+  tr
+    background: #f5f5f5
+    list-style: none
+    margin-bottom: 3px
+
+.translate_editor
+  height: 400px
+input[type=submit], button, input[type=reset]
+  background= !medium_blue
+  border: none
+  padding: 5px
+  color: #fff

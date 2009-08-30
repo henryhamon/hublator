@@ -1,0 +1,44 @@
+= render :partial => 'shared/bridge'
+.content
+  .inner
+    %h2
+      Project -
+      = @project.name
+
+    - if @project.pages.size == 0
+      %h3
+        Processing
+      %p
+        Our bots are working processing this project. Look this page at a few minutes.
+
+    - if @reviews.size > 0
+      %h3 My reviews
+      %table.big-table
+        - @reviews.each do |page|
+          %tr
+            %td
+              = link_to "#{image_tag("flags/#{page.language.abbr}.png")} Página - #{page.page_number}", edit_project_page_path(page.project, page)
+
+    - if @project.pages.size > 0
+      %h3 Pages
+
+    - @pages.group_by(&:language_id).each do |language, pages|
+      - lang = Language.find(language)
+      %h4.span-14
+        = lang.name
+
+      %table.big-table
+        - pages.each do |page|
+          %tr
+            %td
+              = link_to "Página - #{page.page_number}", edit_project_page_path(page.project, page)
+            %td
+              - if page.language_id == language && page.parent_id.nil?
+                - page.pending_languages.each do |l|
+                  = link_to image_tag("flags/#{l.abbr}.png"), be_translator_project_page_path(page.project, page, :params => {'language' => l.id} )
+
+              - if !page.is_default_lang?(language) && page.status == 'released'
+                = link_to 'Review', be_revisor_project_page_path(page.project, page)
+              - elsif !page.is_default_lang?(language)
+                This page is still translating
+
