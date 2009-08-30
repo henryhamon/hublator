@@ -1,9 +1,0 @@
-%div.inner
-  %h2 Listando assets
-  - if !@assets.empty?
-    .assets
-      = render :partial => "asset", :collection => @assets
-    = will_paginate(@assets)
-  - else
-    %p Não há assets no no sitema
-  = link_to 'Incluir asset', new_post_asset_path(@post)

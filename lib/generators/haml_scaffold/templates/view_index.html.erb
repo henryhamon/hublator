@@ -1,9 +1,0 @@
-%div.inner
-  %h2 Listando <%= plural_name %>
-  - if !@<%= plural_name %>.empty?
-    .<%= plural_name %>
-      = render :partial => "<%= singular_name %>", :collection => @<%= plural_name %>
-    = will_paginate(@<%= plural_name %>)
-  - else
-    %p Não há <%= plural_name %> no no sitema
-  = link_to 'Incluir <%= singular_name %>', new_<%= singular_name %>_path
