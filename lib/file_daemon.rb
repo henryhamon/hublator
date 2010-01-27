@@ -1,12 +1,15 @@
 #!/usr/bin/env ruby
 
+# convert a daemon to a cron job
+#
+RAILS_ENV="production"
 require File.join(File.dirname(__FILE__), "..", "config", "environment.rb")
-require "simple-daemon"
+#require "simple-daemon"
 require "gdata_convert.rb"
 
-class FileDaemon < SimpleDaemon::Base
+class FileDaemon #< SimpleDaemon::Base
 
-  SimpleDaemon::WORKING_DIRECTORY = "#{RAILS_ROOT}/tmp"
+# SimpleDaemon::WORKING_DIRECTORY = "#{RAILS_ROOT}/tmp"
 
   def self.start
     loop do
@@ -40,5 +43,7 @@ class FileDaemon < SimpleDaemon::Base
   end
 end
 
-FileDaemon.daemonize
+#FileDaemon.daemonize
+#
+FileDaemon.start
 
