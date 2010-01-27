@@ -8,4 +8,4 @@ doc/*
 db/schema.rb
 *.swp
 *.swo
-assets/*
+public/assets/*
