@@ -12,7 +12,7 @@ class FileDaemon #< SimpleDaemon::Base
 # SimpleDaemon::WORKING_DIRECTORY = "#{RAILS_ROOT}/tmp"
 
   def self.start
-    loop do
+#   loop do
       date = Time.new.strftime('%Y-%m-%d %H:%M:%S')
       project = Project.find(:first,
                               :conditions => { :status => 'pending' },
@@ -35,8 +35,8 @@ class FileDaemon #< SimpleDaemon::Base
         project.processed!
       end
 
-      sleep(30)
-    end
+#     sleep(30)
+#   end
   end
 
   def self.stop
