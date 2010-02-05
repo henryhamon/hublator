@@ -41,7 +41,7 @@ EOF
       file.body.each_line do |l|
         word_count += l.scan(/\w+/).size
         page += RedCloth.new(l).to_html
-        if word_count > 450
+        if word_count > 250
           pages << page
           page = ''
           word_count = 0
