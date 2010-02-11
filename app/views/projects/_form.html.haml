@@ -9,6 +9,10 @@
     %br
     = f.select :category, ["Article", "Book"]
   %p
+    = f.label :tags
+    %br
+    = f.text_area :tags_line
+  %p
     = f.label :description
     %br
     = f.text_area :description

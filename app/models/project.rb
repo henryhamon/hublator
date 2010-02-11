@@ -29,6 +29,8 @@ class Project < ActiveRecord::Base
   has_many :pages
   has_many :activities, :as => :streamable, :dependent => :destroy
 
+  has_and_belongs_to_many :tags
+
   after_create :create_feed
 
   has_attached_file :attachment,
@@ -85,6 +87,19 @@ class Project < ActiveRecord::Base
 
   def default_pages
     pages.select {|e| e.language_id == default_language.id}.size
+  end
+
+  def tags_line=(n)
+    tags.clear
+    n.strip.split(/[;,]/).each do |t|
+      tag = Tag.find_or_create_by_name(t.strip)
+      tags << tag
+    end
+  end
+
+  def tags_line
+    tags.collect{|tag| tag.name}.sort.join(", ")
+    
   end
 
   #AASM
